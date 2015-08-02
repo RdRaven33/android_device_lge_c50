@@ -8,7 +8,7 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno306
 
 # Architecture
 TARGET_ARCH := arm
-TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_ARCH_VARIANT := armv7a
 TARGET_ARCH_VARIANT_CPU := cortex-a9
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
@@ -19,13 +19,13 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 an
 
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x80008000 --ramdisk_offset 0x82000000 --tags_offset 0x80000100 --dt device/lge/c50/dt.img
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x80008000 --ramdisk_offset 0x82000000 --tags_offset 0x80000100 --dt device/lge/y50c/dt.img
 
 # prebuilt kernel
-TARGET_PREBUILT_KERNEL := device/lge/c50/kernel
+TARGET_PREBUILT_KERNEL := device/lge/y50c/kernel
 # else uncomment below to build from sauce
-# TARGET_KERNEL_SOURCE := kernel/lge/c50
-# TARGET_KERNEL_CONFIG := c50_defconfig
+# TARGET_KERNEL_SOURCE := kernel/lge/y50c
+# TARGET_KERNEL_CONFIG := y50c_defconfig
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 25165824
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 25165824
